@@ -1,13 +1,95 @@
 
 
-body {
-   font-style: 25px;
+//----------------------------Обнудение------------------------------------------\\
+*{font-family: Roboto Mono;}
+a {text-decoration: none;}
+//======================================================================================================================================================================\\
+li {
+   list-style-type: none; /* Убираем маркеры */
+   display: inline; /* Отображать как строчный элемент */
+  }
+  ul {
+   margin-left: 0; /* Отступ слева в браузере IE и Opera */
+   padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+  }
+//======================================================================================================================================================================\\
 
-   div {
-      font-style: 10px;
+.wrapper {
+   width: 1920px;
+   min-width: 100%;
+   overflow: hidden;
+}
+._box {
+   max-width: 1004px;
+   margin-left: 200px;
+}
+
+//======================================================================================================================================================================\\
+
+.header {
+      background-color: black;
+      height: 125px;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 0;
+
+   &__box {
+      display: flex;
+      min-height: 150px;
+      align-items: center;
    }
 
-   header {
-      color: aqua;
+   &__logo {
+      img {
+         width:141px;
+         height:47px;
+      }
+   }
+   &__menu {
+      margin: 0px 0px 0px 82px;
    }
 }
+
+.menu {
+
+   &__list {
+
+   }
+
+   &__item {
+      margin-right: 163px;
+   }
+   &__item:last-child {
+      margin-right: 0px;
+   }
+
+   &__link {
+      color: #184FB9;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 47px;
+   }
+   &__item:hover .sub-menu__list  {
+         display: flex;
+         position: relative;
+         top: 80px;
+         background-color: black;
+   }
+
+   }
+   .sub-menu {
+      &__list {
+         position: absolute;
+         display: none;
+         left: 0;
+         top: 30px;
+         background-color: black;
+      }
+      &__link {
+         color: #184FB9;
+         display: block;
+      }
+   } 
+
+//======================================================================================================================================================================\\
