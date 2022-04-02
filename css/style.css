@@ -1,0 +1,16 @@
+header {
+  background-color: black;
+  color: green;
+}
+
+body {
+  font-style: 20px;
+}
+
+body div {
+  font-style: 10px;
+}
+
+body header {
+  color: aqua;
+}
