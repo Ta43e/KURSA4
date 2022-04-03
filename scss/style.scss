@@ -15,13 +15,14 @@ li {
 //======================================================================================================================================================================\\
 
 .wrapper {
-   width: 1920px;
    min-width: 100%;
    overflow: hidden;
 }
 ._box {
-   max-width: 1004px;
-   margin-left: 200px;
+   max-width: 1034px;
+   padding: 0px 15px;
+   margin: 0 auto;
+   margin-left: 10.41%;
 }
 
 //======================================================================================================================================================================\\
@@ -50,11 +51,21 @@ li {
       margin: 0px 0px 0px 82px;
    }
 }
+.box {
+   &__down {
+      position: absolute;
+width: 1920px;
+height: 45px;
+left: 0px;
+top: 104px;
+background: #513CA8;
+   }
+}
 
 .menu {
-
-   &__list {
-
+   &__list
+   {
+      position: relative;
    }
 
    &__item {
@@ -63,32 +74,37 @@ li {
    &__item:last-child {
       margin-right: 0px;
    }
-
    &__link {
       color: #184FB9;
       font-weight: 700;
       font-size: 36px;
       line-height: 47px;
    }
+   
+
    &__item:hover .sub-menu__list  {
-         display: flex;
-         position: relative;
-         top: 80px;
-         background-color: black;
+         display: block;
    }
 
    }
    .sub-menu {
+      padding: 70px 0px 0px 0px;
       &__list {
-         position: absolute;
+         z-index: 4;
+         left: -10%;
+         top: 45px;
+         padding: 20px 3px 20px 3px;
          display: none;
-         left: 0;
-         top: 30px;
-         background-color: black;
+         position: absolute;
+         background-color: #000000;
       }
+      
       &__link {
          color: #184FB9;
          display: block;
+         font-weight: 700;
+         font-size: 36px;
+         line-height: 47px;
       }
    } 
 
