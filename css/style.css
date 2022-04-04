@@ -62,8 +62,8 @@ ul {
 }
 
 .box__down {
+  width: 100%;
   position: absolute;
-  width: 1920px;
   height: 45px;
   left: 0px;
   top: 104px;
@@ -93,15 +93,18 @@ ul {
   display: block;
 }
 
+.menu__item:hover .sub-menu__down {
+  display: block;
+}
+
 .sub-menu {
   padding: 70px 0px 0px 0px;
 }
 
 .sub-menu__list {
   z-index: 4;
-  left: -10%;
+  left: -8%;
   top: 45px;
-  padding: 20px 3px 20px 3px;
   display: none;
   position: absolute;
   background-color: #000000;
@@ -109,8 +112,17 @@ ul {
 
 .sub-menu__link {
   color: #184FB9;
+  width: 100%;
   display: block;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 30px;
   line-height: 47px;
+  text-align: center;
+}
+
+.sub-menu__down {
+  background-color: #513CA8;
+  height: 10px;
+  width: 100%;
+  padding: 0px 0px 35px 0px;
 }
