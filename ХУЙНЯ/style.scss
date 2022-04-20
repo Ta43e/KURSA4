@@ -1,4 +1,4 @@
-
+$text-color: #184FB9;
 
 //----------------------------Обнудение------------------------------------------\\
 *{font-family: Roboto Mono;}
@@ -57,7 +57,7 @@ li {
       position: absolute;
       height: 45px;
       left: 0px;
-      top: 104px;
+      top: 125px;
       background: #513CA8;
    }
 }
@@ -75,7 +75,7 @@ li {
       margin-right: 0px;
    }
    &__link {
-      color: #184FB9;
+      color: $text-color;
       font-weight: 700;
       font-size: 36px;
       line-height: 47px;
@@ -90,6 +90,7 @@ li {
    }
 
    }
+    //======================================================================================================================================================================\\
    .sub-menu {
       padding: 70px 0px 0px 0px;
       &__list {
@@ -102,7 +103,7 @@ li {
       }
       
       &__link {
-         color: #184FB9;
+         color: $text-color;
          width: 100%;
          display: block;
          font-weight: 700;
@@ -113,26 +114,28 @@ li {
 
       &__down {
          background-color: #513CA8;
-         height: 10px;
+         height: 2px;
          width: 100%;
-         padding: 0px 0px 35px 0px;
+         padding: 0px 0px 25px 0px;
       }
    } 
 
-//======================================================================================================================================================================\\
+//=====================================================================================================================================================================\\
 
 .fon {
-
+      background: url(../img/fon.jpg);
+      top: 147px;
+      height: 795px;
+      position: absolute;
+      width: 100%;
+      left: 0;
    &__box {
-   }
-
-   &__bg {
+      align-items: left;
    }
 
    &__text {
+      color: $text-color;
    }
-}
-. {
 
    &_box {
    }

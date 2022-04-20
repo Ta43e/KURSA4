@@ -1,0 +1,299 @@
+* {
+  font-family: Roboto Mono;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *::before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-style: 100px;
+  line-height: 1;
+  font-style: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-style: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: iherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+.line {
+  background-color: #27272A;
+  width: 100%;
+  height: 1px;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+.line__row {
+  height: 1px;
+  width: 85%;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+body {
+  font-family: Roboto Mono;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  min-height: 100%;
+  -ms-grid-rows: minmax(auto, 150px) 1fr minmax(auto, 255px);
+  -ms-grid-columns: 1fr;
+      grid-template: minmax(auto, 150px) 1fr minmax(auto, 255px)/1fr;
+      grid-template-areas: "header" "main" "footer";
+  overflow: hidden;
+}
+
+.header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, #000), color-stop(20%, #513CA8));
+  background: linear-gradient(to bottom, #000 80%, #513CA8 20%);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+  -ms-grid-columns: 1fr minmax(auto, 1520px) 1fr;
+      grid-template: 1fr/1fr minmax(auto, 1520px) 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: start;
+}
+
+.header__menu {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  padding: 0px 15px;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-rows: 1fr;
+  -ms-grid-columns: minmax(auto, 285px) minmax(auto, 1235px);
+      grid-template: 1fr/minmax(auto, 285px) minmax(auto, 1235px);
+}
+
+.header__logo {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  width: 140px;
+  padding-left: 15px;
+}
+
+.header__list {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -ms-grid-rows: 1fr;
+  -ms-grid-columns: 3fr 3fr 3fr 2fr;
+      grid-template: 1fr / 3fr 3fr 3fr 2fr;
+}
+
+.header__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #184FB9;
+  font-size: 28px;
+}
+
+.header__navodka {
+  position: relative;
+}
+
+.header__navodka:hover .padaem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logo_img {
+  width: 120px;
+  height: 40.285px;
+}
+
+.padaem {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  left: -50px;
+  width: 200px;
+  height: 240px;
+  text-align: center;
+}
+
+.padaem__drop-bg {
+  background-color: #513CA8;
+  height: 30px;
+  width: 100%;
+}
+
+.padaem__drop-up {
+  height: 30px;
+  width: 100%;
+}
+
+.padaem__drop {
+  color: #184FB9;
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.nulik {
+  color: #184FB9;
+}
+
+.footer {
+  padding-top: 55px;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footer;
+  display: -ms-grid;
+  display: grid;
+  background-color: #3A3A3A;
+  -ms-grid-rows: 1fr 5fr;
+  -ms-grid-columns: 1fr 5fr 5fr 5fr 1fr;
+      grid-template: 1fr 5fr / 1fr 5fr 5fr 5fr 1fr;
+}
+
+.footer__logo {
+  grid-column: span(5);
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.footer__afischa {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+.footer__kinotiatri {
+  -ms-grid-column: 3;
+  grid-column: 3;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+.footer__kontakti {
+  -ms-grid-column: 4;
+  grid-column: 4;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+.afischa__li {
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.afischa__h1-a {
+  font-size: 18px;
+  line-height: 37px;
+  color: #fff;
+}
+
+.kinotiatri__li {
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.kinotiatri__h1-k {
+  font-size: 18px;
+  line-height: 37px;
+  color: #fff;
+}
+
+.kontakti__h1-kon {
+  font-size: 18px;
+  line-height: 37px;
+  color: #fff;
+}
+
+.kontakti__vk {
+  display: inline;
+  width: 50px;
+  height: 50px;
+  background: #000;
+}
+
+.kontakti__telega {
+  display: inline;
+  width: 50px;
+  height: 50px;
+  background: #b10404;
+}
+
+a.nulik_w {
+  color: #fff;
+}

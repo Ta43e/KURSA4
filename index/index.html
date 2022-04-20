@@ -9,52 +9,144 @@
       rel="stylesheet" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="../css/style.css">
+   <link rel="stylesheet" media="screen and (max-width: 1200px)" href="../css/style-1200px.css">
+   <link rel="stylesheet" media="screen and (max-width: 850px)" href="../css/style-850px.css">
+   <link rel="stylesheet" media="screen and (max-width: 620px)" href="../css/style-620px.css">
+   <link rel="stylesheet" media="screen and (max-width: 520px)" href="../css/style-520px.css">
+   <link rel="stylesheet" media="screen and (max-width: 420px)" href="../css/style-420px.css">
+   <link rel="stylesheet" media="screen and (max-width: 360px)" href="../css/style-360px.css">
    <title>Document</title>
 </head>
 
 <body>
    <div class="wrapper">
       <header class="header">
-         <div class="header__box _box">
-            <a href="" class="header__logo"> <img src="../img/logo.png " alt=""> </a>
-            <nav class="header__menu menu">
-               <ul class="menu__list">
-                  <li class="menu__item">
-                     <a href="" class="menu__link">Афиша</a>
-                     <ul class="sub-menu__list">
-                        <li>
-                           <a href="" class="sub-menu__link">Сейчас в кино</a>
-                        </li>
-                        <li>
-                           <a href="" class="sub-menu__link">Будет в кино</a>
-                        </li>
-                        <li>
-                           <div class="sub-menu__down"></div>
-                        </li>
-                     </ul>
-                  </li>
-                  <li class="menu__item">
-                     <a href="" class="menu__link">Кинотеатры</a>
-                  </li>
-                  <li class="menu__item">
-                     <a href="" class="menu__link">Инфо</a>
-                  </li>
-               </ul>
-            </nav>
-            <div class="box__down">
-            </div>
-         </div>
+         <input class="knopka" id="menu__toggle" type="checkbox" />
+         <label class="menu__btn" for="menu__toggle">
+            <span></span>
+         </label>
+         <nav class="header__menu">
+            <a href="" class="header__logo"><img class="logo_img" src="../img/logo.png" alt=""></a>
+            <ul class="header__list">
+               <li class="header__navodka">
+                  <a href="" class="header__link">Афиша</a>
+                  <ul class="padaem">
+                     <li class="padaem__drop-up"></li>
+                     <li class="padaem__drop"> <a class="nulik" href="">Сейчас в кино</a> </li>
+                     <li class="padaem__drop"><a class="nulik" href="">Будет в кино</a></li>
+                     <li class="padaem__drop-bg"></li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="" class="header__link">Кинотеатры</a>
+               </li>
+               <li>
+                  <a href="" class="header__link">Инфо</a>
+               </li>
+            </ul>
+         </nav>
       </header>
-      <div class="fon">
-         <div class="fon__box _box">
-            <div class="fon__bg">
-
-            </div>
-            <div class="fon__text">
-
+      <main class="content">
+         <div class="info">
+            <div class="info__bg"> </div>
+            <div class="info__text-h1">Сеть кинотеатров KIN4IK
+               <div class="info__text">ул. Бобруйская 25, Минск</div>
             </div>
          </div>
-      </div>
+         <div class="advantage">
+            <div class="advantage__item">
+               <div class="item__items1">
+                  <div class="img"><img src="" alt="" class="foto"></div>
+                  <div class="text_h1">6 экранов</div>
+                  <div class="text">Современные комфортные залы</div>
+               </div>
+               <div class="item__items2">
+                  <div class="img"><img src="" alt="" class="foto"></div>
+                  <div class="text_h1">Видео Sony</div>
+                  <div class="text">Кристально чистая проекция</div>
+               </div>
+               <div class="item__items3">
+                  <div class="img"><img src="" alt="" class="foto"></div>
+                  <div class="text_h1">Крутой звук</div>
+                  <div class="text">Высококачественный звук Dolby Atmos</div>
+               </div>
+               <div class="item__items4">
+                  <div class="img"><img src="" alt="" class="foto"></div>
+                  <div class="text_h1">Удобные кресла</div>
+                  <div class="text">Можно и вздремнуть</div>
+               </div>
+               <div class="item__items5">
+                  <div class="img"><img src="" alt="" class="foto"></div>
+                  <div class="text_h1">Паркинг</div>
+                  <div class="text">Бесплатная парковка по билету</div>
+               </div>
+               <div class="item__items6">
+                  <div class="img"><img src="" alt="" class="foto"></div>
+                  <div class="text_h1">Wi-Fi</div>
+                  <div class="text">Бесплатный Wi-Fi</div>
+               </div>
+               <div class="item__items7">
+                  <div class="img"><img src="" alt="" class="foto"></div>
+                  <div class="text_h1">Уют</div>
+                  <div class="text">Всё для вашего удобства</div>
+               </div>
+               <div class="item__items8">
+                  <div class="img"><img src="" alt="" class="foto"></div>
+                  <div class="text_h1">Аренда</div>
+                  <div class="text">Аренда залов под ваши мероприятия</div>
+               </div>
+            </div>
+         </div>
+         <div class="line">
+            <div class="line__row"></div>
+         </div>
+         <div class="detail">
+            <div class="detail__row">
+               <div class="items__text1">Эмоции выходят за границы экрана.
+                  Экран имеет больший коэффициент отражение, нежели аналоговые, что способствует высокому показателю
+                  качества проецируемой картинке.
+                  Смотрите у нас фильмы в качественном 3D.
+               </div>
+               <div class="items__img1"><img src="" alt="" class="fotki"></div>
+
+               <div class="items__text2">Смотрите лучшие фильмы по лучшей цене.
+                  У нас есть акции для именинников, скидка 20%, а также акции на “Супер-фильмы”. </div>
+               <div class="items__img2"><img src="" alt="" class="fotki"></div>
+               <div class="items__text3">
+                  Bыбирайте лакомства по вкусу.
+                  Разноцветные фруктово-ледяные слаши порадуют яркими красками и разнообразными вкусами и взрослых, и
+                  детей. Кроме того, вы сможете купить классическими напитки: Coca-Cola, Fanta, Sprite.
+               </div>
+               <div class="items__img3"><img src="" alt="" class="fotki"></div>
+            </div>
+         </div>
+         <div class="line">
+            <div class="line__row"></div>
+         </div>
+      </main>
+      <footer class="footer">
+         <div class="footer__logo"><a href=""><img src="../img/logo.png" alt="" class="logo_img"></a></div>
+         <div class="footer__afischa">
+            <ul>
+               <li class="afischa__h1-a">Афиша</li>
+               <li class="afischa__li"><a class="nulik_w" href="">Сейчас в кино</a></li>
+               <li class="afischa__li"><a class="nulik_w" href="">Будет в кино</a></li>
+            </ul>
+         </div>
+         <div class="footer__kinotiatri">
+            <ul>
+               <li class="kinotiatri__h1-k"><a class="nulik_w" href="">Кинотеатры</a></li>
+               <li class="kinotiatri__li"><a class="nulik_w" href="">Адреса</a></li>
+            </ul>
+         </div>
+         <div class="footer__kontakti">
+            <ul>
+               <li class="kontakti__h1-kon">Контакты</li>
+               <li><a href=""><img src="" alt="" class="kontakti__vk"></a> <a href=""><img src="" alt=""
+                        class="kontakti__telega"></a></li>
+            </ul>
+         </div>
+      </footer>
    </div>
 </body>
 

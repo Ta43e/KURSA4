@@ -1,0 +1,226 @@
+$text-color: #184FB9;
+$fon: #27272A;
+$fon_f:#3A3A3A;
+$text_info: #9D9898; 
+$fon_header: #513CA8;
+   //----------------------------Обнуление------------------------------------------\\
+*{font-family: Roboto Mono; padding: 0; margin: 0; border: 0;}
+*,*::before,*:after{-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+:focus, :active{outline: none;}
+nav, footer, header, aside{display: block;}
+html, body{height: 100%; width: 100%; font-style: 100px;line-height: 1;font-style: 14px;-ms-text-size-adjust: 100%; -moz-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;}
+input, button, textarea {font-style: inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0; border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: iherit;}
+a {text-decoration: none;}
+//=====================Оболочка=================================================================================================================================================\\
+
+.line {
+background-color: $fon;
+width: 100%;
+height: 1px;
+padding-top: 50px;
+padding-bottom: 70px;
+&__row{
+   height: 1px;
+   width: 85%;
+   margin: 0 auto;
+   background-color: #fff;
+}
+}
+
+body {
+   font-family: Roboto Mono;
+}
+
+.wrapper {
+   display: grid;
+   min-height: 100%;
+   grid-template: minmax(auto ,150px) 1fr minmax(auto ,255px) / 1fr;
+   grid-template-areas:
+      "header"
+      "main"
+      "footer"
+   ;
+   overflow:  hidden;
+}
+//=================Шапка==================================================//
+
+.header {
+   background: $fon;
+      &__menu {
+         padding: 60px 0px;
+         visibility: hidden;
+         display: block;
+         position: fixed;
+         top: 0;
+         left: 0%;
+         align-items: center;
+         background: rgba(0, 0, 0, 0.921);
+         width: 68%;
+         height: 100%;
+         transition-duration: .25s;
+         left: -100%;
+      }
+   
+      &__navodka {
+         display: block;
+      }
+      &__list {
+         display: block;
+         transition-duration: .25s;
+         padding: 15px;
+      }
+   }
+   
+   //------------------------------------------------//
+   
+   
+   #menu__toggle {
+      opacity: 0;
+    }
+    
+    #menu__toggle:checked ~ .menu__btn > span {
+      transform: rotate(45deg);
+    }
+    #menu__toggle:checked ~ .menu__btn > span::before {
+      top: 0;
+      transform: rotate(0);
+    }
+    #menu__toggle:checked ~ .menu__btn > span::after {
+      top: 0;
+      transform: rotate(90deg);
+    }
+    #menu__toggle:checked ~ .header__menu {
+      visibility: visible;
+      left: 0;
+    }
+    
+    .menu__btn {
+      display: flex;
+      align-items: center;
+      position: fixed;
+      top: 20px;
+      left: 20px;
+    
+      width: 26px;
+      height: 26px;
+    
+      cursor: pointer;
+      z-index: 1;
+    }
+    
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+      display: block;
+      position: absolute;
+    
+      width: 100%;
+      height: 2px;
+    
+      background-color: #616161;
+    
+      transition-duration: .25s;
+    }
+    .menu__btn > span::before {
+      content: '';
+      top: -8px;
+    }
+    .menu__btn > span::after {
+      content: '';
+      top: 8px;
+    }
+    
+//===========================Инфо======================================================//
+
+   
+//===========================Подвал======================================================//
+
+.footer {
+padding-top: 55px;
+grid-area: footer;
+display: grid;
+background-color: $fon-f;
+grid-template: 1fr 5fr / 1fr 5fr 5fr 5fr 1fr;
+   &__logo {
+      grid-column: span(5);
+      grid-row: 1;
+   }
+
+   &__afischa {
+      grid-column: 2;
+      grid-row: 2;
+   }
+
+   &__kinotiatri {
+      grid-column: 3;
+      grid-row: 2;
+   }
+
+   &__kontakti {
+      grid-column: 4;
+      grid-row: 2;
+   }
+}
+
+.afischa {
+   &__li {
+      font-size: 12px;
+      line-height: 16px;
+      color: #FFFFFF;
+      }
+   &__h1-a {
+      font-size: 15px;
+      line-height: 30px;
+      color: #fff;
+   }
+}
+.kinotiatri {
+   padding-right: 5px;
+   &__li {
+      font-size: 12px;
+      line-height: 16px;
+      color: #FFFFFF;
+   }
+   &__h1-k {
+      font-size: 12px;
+      line-height: 25px;
+      color: #fff;
+   }
+}
+
+.kontakti {
+   &__h1-kon {
+      font-size: 15px;
+      line-height: 30px;
+      color: #fff;
+   }
+
+   &__vk {
+      display: inline;
+      width: 25px;
+      height: 25px;
+      background: #000;
+   }
+
+   &__telega {
+      display: inline;
+      width: 25px;
+      height: 25px;
+      background: rgb(177, 4, 4);
+   }
+}
+a.nulik_w {
+   color: #fff;
+}
+.footer__logo .logo_img {
+   width: 74.46px;
+   height: 25px;
+}
