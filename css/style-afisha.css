@@ -274,6 +274,154 @@ body {
   top: 8px;
 }
 
+.content {
+  padding: 30px 0;
+  background: #27272A;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: main;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto (1fr)[3];
+  -ms-grid-columns: 1fr (3.4fr)[3] 1fr;
+      grid-template: auto repeat(3, 1fr)/1fr repeat(3, 3.4fr) 1fr;
+  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-row-gap: 40px;
+}
+
+.advantage1 {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+.text {
+  font-size: 48px;
+  line-height: 63px;
+  color: #184FB9;
+}
+
+.advantage2 {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+.advantage3 {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 3;
+  grid-column: 3;
+}
+
+.advantage4 {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 4;
+  grid-column: 4;
+  display: -ms-grid;
+  display: grid;
+}
+
+.advantage5 {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+.advantage6 {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  -ms-grid-column: 3;
+  grid-column: 3;
+}
+
+.advantage7 {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  -ms-grid-column: 4;
+  grid-column: 4;
+}
+
+.advantage8 {
+  -ms-grid-row: 4;
+  grid-row: 4;
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+.advantage9 {
+  -ms-grid-row: 4;
+  grid-row: 4;
+  -ms-grid-column: 3;
+  grid-column: 3;
+}
+
+.advantage10 {
+  -ms-grid-row: 4;
+  grid-row: 4;
+  -ms-grid-column: 4;
+  grid-column: 4;
+}
+
+.item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr auto;
+  -ms-grid-columns: 1fr 3fr 5fr 1fr;
+      grid-template: 1fr auto / 1fr 3fr 5fr 1fr;
+  background: #1A1A1C;
+  border-radius: 20px;
+  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.item-img {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+}
+
+.kartinka {
+  width: 349px;
+  height: 538px;
+  border-radius: 15px;
+}
+
+.item-info {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  font-size: 24px;
+  line-height: 32px;
+  color: #184FB9;
+  background: #000000;
+  border-radius: 20px;
+}
+
+.item-buy {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 3;
+  grid-column: 3;
+  font-size: 24px;
+  line-height: 32px;
+  color: #184FB9;
+  background: #000000;
+  border-radius: 20px;
+}
+
 .footer {
   padding-top: 55px;
   -ms-grid-row: 3;

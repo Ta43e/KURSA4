@@ -100,6 +100,7 @@ body {
    height: 40.285px;
 }
 .padaem {
+   z-index: 10;
    display: none;
    position: absolute;
    background-color: #000000;
@@ -196,10 +197,11 @@ display: grid;
 .info {
   display: grid;
   grid-template: 1fr / 1fr minmax(auto, 1520px) 1fr;
-  background-image: url(../img/fon.jpg);
+  background-color: rgba(0, 0, 0, 0.2);
   width: 100%;
-  height: 750px;
+  height: 86vh;
       &__text-h1 {
+         grid-column: 2;
          font-size: 48px;
          line-height: 63px;
          color: $text-color;
@@ -370,10 +372,6 @@ background-color: $fon;
    &__img3 {
       display: flex;
       margin: 0 auto;
-      align-self:center;
-      width: 165px;
-      height: 107px;
-      background-color: #fff;
       grid-column: 2;
       grid-row: 3;
    }

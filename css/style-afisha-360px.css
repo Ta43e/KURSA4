@@ -198,6 +198,10 @@ body {
   top: 8px;
 }
 
+.content {
+  grid-area: content;
+}
+
 .footer {
   padding-top: 55px;
   -ms-grid-row: 3;
