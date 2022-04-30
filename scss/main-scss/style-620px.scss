@@ -54,6 +54,7 @@ body {
 
 .header {
    background: $fon;
+   z-index: 10;
       &__menu {
          padding: 60px 0px;
          visibility: hidden;
@@ -238,9 +239,7 @@ display: grid;
 		}
 }
 .img {
-   width: 165px;
-   height: 107px;
-   background-color: #fff;
+
 }
 .text {
    text-align: center;
@@ -279,11 +278,12 @@ background-color: $fon;
       display: flex;
       margin: 0 auto;
       align-self:center;
-      width: 165px;
-      height: 107px;
-      background-color: #fff;
       grid-column: 2;
       grid-row: 1;
+      svg {
+         width: 185px;
+         height: 185px;
+      }
    }
 
    &__text2 {
@@ -300,11 +300,13 @@ background-color: $fon;
       align-self:center;
       margin: 0 auto;
       display: flex;
-      width: 165px;
-      height: 107px;
-      background-color: #fff;
       grid-column: 3;
       grid-row: 2;
+      svg {
+         width: 185px;
+         height: 185px;
+      }
+
    }
 
    &__text3 {
@@ -318,10 +320,15 @@ background-color: $fon;
       border-top: 1px solid #fff;
    }
    &__img3 {
+      align-items:center;
       display: flex;
       margin: 0 auto;
       grid-column: 2;
       grid-row: 3;
+      svg {
+         width: 185px;
+         height: 185px;
+      }
    }
 
 
@@ -385,24 +392,14 @@ background-color: $fon;
 }
 
 .kontakti {
+   svg {
+      width: 50px;
+      height: 50px;
+   }
    &__h1-kon {
       font-size: 18px;
       line-height: 37px;
       color: #fff;
-   }
-
-   &__vk {
-      display: inline;
-      width: 50px;
-      height: 50px;
-      background: #000;
-   }
-
-   &__telega {
-      display: inline;
-      width: 50px;
-      height: 50px;
-      background: rgb(177, 4, 4);
    }
 }
 a.nulik_w {

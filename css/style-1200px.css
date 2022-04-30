@@ -391,12 +391,6 @@ body {
   grid-row: 2;
 }
 
-.img {
-  width: 165px;
-  height: 107px;
-  background-color: #fff;
-}
-
 .text {
   text-align: center;
   font-size: 20px;
@@ -446,9 +440,6 @@ body {
   margin: 0 auto;
   -ms-flex-item-align: center;
       align-self: center;
-  width: 165px;
-  height: 107px;
-  background-color: #fff;
   -ms-grid-column: 2;
   grid-column: 2;
   -ms-grid-row: 1;
@@ -479,9 +470,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 165px;
-  height: 107px;
-  background-color: #fff;
   -ms-grid-column: 3;
   grid-column: 3;
   -ms-grid-row: 2;
@@ -588,16 +576,10 @@ body {
 
 .kontakti__vk {
   display: inline;
-  width: 55px;
-  height: 55px;
-  background: #000;
 }
 
 .kontakti__telega {
   display: inline;
-  width: 55px;
-  height: 55px;
-  background: #b10404;
 }
 
 a.nulik_w {

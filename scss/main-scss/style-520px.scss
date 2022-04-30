@@ -238,9 +238,6 @@ display: grid;
 		}
 }
 .img {
-   width: 165px;
-   height: 107px;
-   background-color: #fff;
 }
 .text {
    text-align: center;
@@ -279,9 +276,6 @@ display: grid;
          display: flex;
          margin: 0 auto;
          align-self:center;
-         width: 165px;
-         height: 107px;
-         background-color: #fff;
          grid-column: 2;
          grid-row: 1;
       }
@@ -300,11 +294,9 @@ display: grid;
          align-self:center;
          margin: 0 auto;
          display: flex;
-         width: 165px;
-         height: 107px;
-         background-color: #fff;
          grid-column: 3;
          grid-row: 2;
+   
       }
    
       &__text3 {
@@ -394,16 +386,12 @@ display: grid;
 
    &__vk {
       display: inline;
-      width: 50px;
-      height: 50px;
-      background: #000;
+
    }
 
    &__telega {
       display: inline;
-      width: 50px;
-      height: 50px;
-      background: rgb(177, 4, 4);
+
    }
 }
 a.nulik_w {

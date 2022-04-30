@@ -238,9 +238,10 @@ display: grid;
 		}
 }
 .img {
-   width: 165px;
-   height: 107px;
-   background-color: #fff;
+   svg  {
+      width: 135px;
+   }
+
 }
 .text {
    text-align: center;
@@ -279,11 +280,12 @@ display: grid;
          display: flex;
          margin: 0 auto;
          align-self:center;
-         width: 138px;
-         height: 90px;
-         background-color: #fff;
          grid-column: 2;
          grid-row: 1;
+         svg {
+            width: 165px;
+            height: 165px;
+         }
       }
    
       &__text2 {
@@ -300,11 +302,13 @@ display: grid;
          align-self:center;
          margin: 0 auto;
          display: flex;
-         width: 138px;
-         height: 90px;
-         background-color: #fff;
          grid-column: 3;
          grid-row: 2;
+         svg {
+            width: 165px;
+            height: 165px;
+         }
+   
       }
    
       &__text3 {
@@ -322,6 +326,10 @@ display: grid;
          margin: 0 auto;
          grid-column: 2;
          grid-row: 3;
+         svg {
+            width: 165px;
+            height: 165px;
+         }
       }
    
    
@@ -392,25 +400,11 @@ display: grid;
       line-height: 30px;
       color: #fff;
    }
-
-   &__vk {
-      display: inline;
-      width: 30px;
-      height: 30px;
-      background: #000;
-   }
-
-   &__telega {
-      display: inline;
-      width: 30px;
-      height: 30px;
-      background: rgb(177, 4, 4);
-   }
-}
 a.nulik_w {
    color: #fff;
 }
 .footer__logo .logo_img {
    width: 89.36px;
    height: 30px;
+}
 }
