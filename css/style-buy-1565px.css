@@ -1,0 +1,105 @@
+* {
+  font-family: Roboto Mono;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *::before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-style: 100px;
+  line-height: 1;
+  font-style: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-style: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited, a:hover {
+  text-decoration: none;
+}
+
+a.nulik, a.nulik:visited, a.nulik:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: iherit;
+}
+
+.line {
+  background-color: #27272A;
+  width: 100%;
+  height: 1px;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+.line__row {
+  height: 1px;
+  width: 85%;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+body {
+  font-family: Roboto Mono;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  min-height: 100%;
+  -ms-grid-rows: minmax(auto, 150px) 1fr minmax(auto, 255px);
+  -ms-grid-columns: 1fr;
+      grid-template: minmax(auto, 150px) 1fr minmax(auto, 255px)/1fr;
+      grid-template-areas: "header" "main" "footer";
+  overflow: hidden;
+}
+
+.content {
+  background: #27272A;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: main;
+}

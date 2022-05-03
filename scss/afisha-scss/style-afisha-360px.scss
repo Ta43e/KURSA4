@@ -42,7 +42,7 @@ body {
 .wrapper {
    display: grid;
    min-height: 100%;
-   grid-template: minmax(auto ,150px) 1fr minmax(auto ,255px) / 1fr;
+   grid-template: minmax(auto ,50px) auto minmax(auto ,255px) / 1fr;
    grid-template-areas:
       "header"
       "main"
@@ -140,7 +140,96 @@ body {
     
 //===========================Инфо======================================================//
 .content {
-   grid-area: content;
+   padding: 30px 0;
+   background: $fon;
+   grid-area: main;
+   display: grid;
+   grid-template: auto repeat(9, auto) / 1fr 10fr 1fr;
+   justify-items: center;
+   justify-content: center;
+   grid-row-gap: 40px;
+}
+
+.advantage1 {
+   grid-row: 1;
+   grid-column: 2;
+}
+.advantage2 {
+   grid-row: 2;
+   grid-column: 2;
+}
+.advantage3 {
+   grid-row: 3;
+   grid-column: 2;
+}
+.advantage4 {
+   grid-row: 4;
+   grid-column: 2;
+}
+.advantage5 {
+   grid-row: 5;
+   grid-column: 2;
+}
+.advantage6 {
+   grid-row: 6;
+   grid-column: 2;
+}
+.advantage7 {
+   grid-row: 7;
+   grid-column: 2;
+}
+.advantage8 {
+   grid-row: 8;
+   grid-column: 2;
+}
+.advantage9 {
+   grid-row: 9;
+   grid-column: 2;
+}
+.advantage10 {
+   grid-row: 9;
+   grid-column: 2;
+}
+
+.text {
+   font-size: 40px;
+   line-height: 40px;
+   color: $text-color;
+}
+
+.item {
+   display: grid;
+   grid-template: 1fr auto / 1fr 3fr 5fr 1fr;
+   background: #1A1A1C;
+   border-radius: 20px;
+   justify-items: center;
+   justify-content: center;
+}
+
+.kartinka {
+   width: 142px;
+   height: 220px;
+   border-radius: 25px;
+}
+.item-info {
+   text-align: center;
+   grid-row: 2;
+   grid-column: 2;
+   font-size: 12px;
+   color: $text-color;
+   background: #000000;
+   border-radius: 20px;
+   line-height: 15px;
+}
+.item-buy {
+   text-align: center;
+   grid-row: 2;
+   grid-column: 3;
+   font-size: 12px;
+   color: $text-color;
+   background: #000000;
+   border-radius: 20px;
+   line-height: 15px;
 }
    
 //===========================Подвал======================================================//
@@ -203,20 +292,6 @@ grid-template: 1fr 5fr / 1fr 5fr 5fr 5fr 1fr;
       font-size: 15px;
       line-height: 30px;
       color: #fff;
-   }
-
-   &__vk {
-      display: inline;
-      width: 25px;
-      height: 25px;
-      background: #000;
-   }
-
-   &__telega {
-      display: inline;
-      width: 25px;
-      height: 25px;
-      background: rgb(177, 4, 4);
    }
 }
 a.nulik_w {

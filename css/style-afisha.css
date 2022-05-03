@@ -382,6 +382,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 10px;
 }
 
 .item-img {
@@ -404,7 +405,7 @@ body {
   -ms-grid-column: 2;
   grid-column: 2;
   font-size: 24px;
-  line-height: 32px;
+  line-height: 40px;
   color: #184FB9;
   background: #000000;
   border-radius: 20px;
@@ -416,7 +417,7 @@ body {
   -ms-grid-column: 3;
   grid-column: 3;
   font-size: 24px;
-  line-height: 32px;
+  line-height: 40px;
   color: #184FB9;
   background: #000000;
   border-radius: 20px;
@@ -485,20 +486,16 @@ body {
   color: #fff;
 }
 
-.kontakti__vk {
-  display: inline;
-  width: 60px;
-  height: 60px;
-  background: #000;
-}
-
-.kontakti__telega {
-  display: inline;
-  width: 60px;
-  height: 60px;
-  background: #b10404;
-}
-
 a.nulik_w {
   color: #fff;
+}
+
+svg.kontakti__telega {
+  width: 60px;
+  height: 60px;
+}
+
+svg.kontakti__vk {
+  width: 60px;
+  height: 60px;
 }

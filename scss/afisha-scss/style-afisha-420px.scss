@@ -42,7 +42,7 @@ body {
 .wrapper {
    display: grid;
    min-height: 100%;
-   grid-template: minmax(auto ,150px) 1fr minmax(auto ,255px) / 1fr;
+   grid-template: minmax(auto ,50px) auto minmax(auto ,255px) / 1fr;
    grid-template-areas:
       "header"
       "main"
@@ -202,25 +202,19 @@ body {
       line-height: 30px;
       color: #fff;
    }
-
-   &__vk {
-      display: inline;
-      width: 30px;
-      height: 30px;
-      background: #000;
-   }
-
-   &__telega {
-      display: inline;
-      width: 30px;
-      height: 30px;
-      background: rgb(177, 4, 4);
-   }
 }
 a.nulik_w {
    color: #fff;
 }
 .footer__logo .logo_img {
    width: 89.36px;
+   height: 30px;
+}
+svg.kontakti__telega {
+   width: 30px;
+   height: 30px;
+}
+svg.kontakti__vk {
+   width: 30px;
    height: 30px;
 }

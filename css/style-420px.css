@@ -214,7 +214,6 @@ body {
       grid-template: 1fr/1fr minmax(auto, 1520px) 1fr;
   background-color: rgba(0, 0, 0, 0.75);
   width: 100%;
-  height: 750px;
 }
 
 .info__text-h1 {
@@ -593,5 +592,15 @@ body {
 
 .kontakti .footer__logo .logo_img {
   width: 89.36px;
+  height: 30px;
+}
+
+svg.kontakti__telega {
+  width: 30px;
+  height: 30px;
+}
+
+svg.kontakti__vk {
+  width: 30px;
   height: 30px;
 }

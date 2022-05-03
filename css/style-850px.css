@@ -576,14 +576,16 @@ body {
   color: #fff;
 }
 
-.kontakti__vk {
-  display: inline;
-}
-
-.kontakti__telega {
-  display: inline;
-}
-
 a.nulik_w {
   color: #fff;
+}
+
+svg.kontakti__telega {
+  width: 50px;
+  height: 50px;
+}
+
+svg.kontakti__vk {
+  width: 50px;
+  height: 50px;
 }

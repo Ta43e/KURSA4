@@ -129,6 +129,55 @@ body {
 }
 //===========================Афиша======================================================//
 
+.content {
+   padding: 30px 0;
+   background: $fon;
+   grid-area: main;
+   display: grid;
+   grid-template: auto repeat(3, 1fr) / 1fr repeat(3, 3.4fr) 1fr;
+   justify-items: center;
+   justify-content: center;
+   grid-row-gap: 40px;
+}
+
+.text {
+   font-size: 40px;
+   line-height: 40px;
+   color: $text-color;
+}
+
+.item {
+   display: grid;
+   grid-template: 1fr auto / 1fr 3fr 5fr 1fr;
+   background: #1A1A1C;
+   border-radius: 20px;
+   justify-items: center;
+   justify-content: center;
+}
+
+.kartinka {
+   width: 195px;
+   height: 300px;
+   border-radius: 15px;
+}
+.item-info {
+   text-align: center;
+   grid-row: 2;
+   grid-column: 2;
+   font-size: 18px;
+   color: $text-color;
+   background: #000000;
+   border-radius: 20px;
+}
+.item-buy {
+   text-align: center;
+   grid-row: 2;
+   grid-column: 3;
+   font-size: 18px;
+   color: $text-color;
+   background: #000000;
+   border-radius: 20px;
+}
 
 
 
@@ -193,20 +242,15 @@ body {
       color: #fff;
    }
 
-   &__vk {
-      display: inline;
-      width: 50px;
-      height: 50px;
-      background: #000;
-   }
-
-   &__telega {
-      display: inline;
-      width: 50px;
-      height: 50px;
-      background: rgb(177, 4, 4);
-   }
 }
 a.nulik_w {
    color: #fff;
+}
+svg.kontakti__telega {
+   width: 50px;
+   height: 50px;
+}
+svg.kontakti__vk {
+   width: 50px;
+   height: 50px;
 }

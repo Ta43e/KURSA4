@@ -165,23 +165,23 @@ body {
    border-radius: 15px;
 }
 .item-info {
+   text-align: center;
    grid-row: 2;
    grid-column: 2;
-   font-size: 24px;
-   line-height: 32px;
+   font-size: 20px;
    color: $text-color;
    background: #000000;
    border-radius: 20px;
-
 }
 .item-buy {
+   text-align: center;
    grid-row: 2;
    grid-column: 3;
-   font-size: 24px;
-   line-height: 32px; 
+   font-size: 20px;
    color: $text-color;
    background: #000000;
    border-radius: 20px;
+   line-height: 30px;
 }
 
 //===========================Подвал======================================================//
@@ -247,20 +247,6 @@ body {
       font-size: 30px;
       line-height: 40px;
       color: #fff;
-   }
-
-   &__vk {
-      display: inline;
-      width: 55px;
-      height: 55px;
-      background: #000;
-   }
-
-   &__telega {
-      display: inline;
-      width: 55px;
-      height: 55px;
-      background: rgb(177, 4, 4);
    }
 }
 a.nulik_w {
