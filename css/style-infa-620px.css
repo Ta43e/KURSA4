@@ -380,9 +380,6 @@ body {
   grid-row: 2;
   -ms-grid-column: 3;
   grid-column: 3;
-  background: black;
-  width: 90%;
-  height: 100%;
 }
 
 .teasers .img-foto {
