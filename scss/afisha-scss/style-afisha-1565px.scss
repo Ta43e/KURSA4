@@ -80,27 +80,22 @@ body {
    grid-row: 1;
    grid-column: 2/4;
 }
-.kartinka {
-   width: 324px;
-   height: 500px;
-   border-radius: 15px;
-}
+// .kartinka {
+//    width: 324px;
+//    height: 500px;
+//    border-radius: 15px;
+// }
 .item-info {
    grid-row: 2;
    grid-column: 2;
    font-size: 22px;
-   color: $text-color;
-   background: #000000;
-   border-radius: 20px;
-
+   color: $text_info;
 }
 .item-buy {
    grid-row: 2;
    grid-column: 3;
    font-size: 22px;
-   color: $text-color;
-   background: #000000;
-   border-radius: 20px;
+   color: $text_info;
 }
 
 //===========================Подвал======================================================//

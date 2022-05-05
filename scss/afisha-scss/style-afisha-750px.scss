@@ -56,10 +56,52 @@ body {
    background: $fon;
    grid-area: main;
    display: grid;
-   grid-template: auto repeat(3, 1fr) / 1fr repeat(3, 3.4fr) 1fr;
+   grid-template: auto repeat(5, 1fr) / 1fr repeat(2, 5fr) 1fr;
    justify-items: center;
    justify-content: center;
    grid-row-gap: 40px;
+}
+
+.advantage1 {
+   grid-row: 1;
+   grid-column: 2;
+}
+.advantage2 {
+   grid-row: 2;
+   grid-column: 2;
+}
+.advantage3 {
+   grid-row: 2;
+   grid-column: 3;
+}
+.advantage4 {
+   grid-row: 3;
+   grid-column: 2;
+   display: grid;
+}
+.advantage5 {
+   grid-row: 3;
+   grid-column: 3;
+}
+.advantage6 {
+   grid-row: 4;
+   grid-column: 2;
+}
+.advantage7 {
+   grid-row: 4;
+   grid-column: 3;
+}
+.advantage8 {
+   grid-row: 5;
+   grid-column: 2;
+}
+.advantage9 {
+   grid-row: 5;
+   grid-column: 3;
+}
+.advantage10 {
+   grid-row: 6;
+   grid-column: 2;
 }
 
 .text {
@@ -76,30 +118,19 @@ body {
    justify-items: center;
    justify-content: center;
 }
-
-.kartinka {
-   width: 175px;
-   height: 270px;
-   border-radius: 15px;
-}
 .item-info {
    text-align: center;
    grid-row: 2;
    grid-column: 2;
-   font-size: 18px;
+   font-size: 16px;
    color: $text-color;
-   background: #000000;
-   border-radius: 20px;
    line-height: 20px;
 }
 .item-buy {
    text-align: center;
    grid-row: 2;
    grid-column: 3;
-   font-size: 18px;
-   line-height: 12px; 
+   font-size: 16px;
    color: $text-color;
-   background: #000000;
-   border-radius: 20px;
    line-height: 20px;
 }

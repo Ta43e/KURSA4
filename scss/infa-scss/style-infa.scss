@@ -37,6 +37,12 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: iherit;}
 //=====================Оболочка=================================================================================================================================================\\
 
+a:hover {
+   color: rgb(255, 255, 255);
+   transition-duration: .25s;
+}
+
+//=====//
 .line {
 background-color: $fon;
 width: 100%;

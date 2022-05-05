@@ -36,6 +36,12 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: iherit;}
 //=====================Оболочка=================================================================================================================================================\\
 
+a:hover {
+   color: rgb(255, 255, 255);
+   transition-duration: .25s;
+}
+
+//===============//
 .line {
 background-color: $fon;
 width: 100%;
@@ -111,20 +117,22 @@ body {
       justify-content:space-between;
    }
 }
+
 .logo_img {
    width: 120px;
    height: 40.285px;
 }
 .padaem {
-   z-index: 10;
+   z-index: 5;
    display: none;
    position: absolute;
    background-color: #000000;
    left: -80px;
    width: 276px;
-   height: 280px;
+   height: 275px;
    text-align: center;
    transition-duration: .25s;
+   margin-top: 5px ;
    
    &__drop-bg {
       background-color: $fon_header;
@@ -328,6 +336,7 @@ background-color: $fon;
    &__row {
       display: grid;
       grid-template: 1fr 1fr 1fr / 1fr 3.8fr 3.8fr 1fr;
+      grid-column-gap: 10px ;
    }
 }
 .items { 
@@ -383,7 +392,10 @@ background-color: $fon;
       grid-column: 2;
       grid-row: 3;
    }
-
+   .items__imgd {
+      width: 100%;
+      height: 100%;
+   }
 
 }
 // .fotki {

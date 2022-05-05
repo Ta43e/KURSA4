@@ -82,6 +82,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: iherit;
 }
 
+a:hover {
+  color: white;
+  -webkit-transition-duration: .25s;
+          transition-duration: .25s;
+}
+
 .line {
   background-color: #27272A;
   width: 100%;

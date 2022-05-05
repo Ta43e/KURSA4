@@ -67,6 +67,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: iherit;
 }
 
+a:hover {
+  color: white;
+  -webkit-transition-duration: .25s;
+          transition-duration: .25s;
+}
+
 .line {
   background-color: #27272A;
   width: 100%;
@@ -394,8 +400,8 @@ body {
 }
 
 .kartinka {
-  width: 349px;
-  height: 538px;
+  width: 100%;
+  height: 100%;
   border-radius: 15px;
 }
 
@@ -407,8 +413,6 @@ body {
   font-size: 24px;
   line-height: 40px;
   color: #184FB9;
-  background: #000000;
-  border-radius: 20px;
 }
 
 .item-buy {
@@ -419,8 +423,6 @@ body {
   font-size: 24px;
   line-height: 40px;
   color: #184FB9;
-  background: #000000;
-  border-radius: 20px;
 }
 
 .footer {

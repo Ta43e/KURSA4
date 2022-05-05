@@ -105,9 +105,10 @@ body {
    background-color: #000000;
    left: -80px;
    width: 276px;
-   height: 280px;
+   height: 275px;
    text-align: center;
    transition-duration: .25s;
+   margin-top: 5px;
    
    &__drop-bg {
       background-color: $fon_header;
@@ -139,7 +140,6 @@ display: grid;
 .info {
    display: grid;
    grid-template: 1fr / 1fr minmax(auto, 1520px) 1fr;
-   background-color: rgba(0,0,0,0.75);
    width: 100%;
    height: 750px;
        &__text-h1 {

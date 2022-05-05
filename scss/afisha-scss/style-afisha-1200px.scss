@@ -159,29 +159,26 @@ body {
    justify-content: center;
 }
 
-.kartinka {
-   width: 260px;
-   height: 400px;
-   border-radius: 15px;
-}
+// .kartinka {
+//    width: 260px;
+//    height: 400px;
+//    border-radius: 15px;
+// }
 .item-info {
    text-align: center;
    grid-row: 2;
    grid-column: 2;
-   font-size: 20px;
+   font-size: 17px;
    color: $text-color;
-   background: #000000;
-   border-radius: 20px;
+   line-height: 25px;
 }
 .item-buy {
    text-align: center;
    grid-row: 2;
    grid-column: 3;
-   font-size: 20px;
+   font-size: 17px;
    color: $text-color;
-   background: #000000;
-   border-radius: 20px;
-   line-height: 30px;
+   line-height: 25px;
 }
 
 //===========================Подвал======================================================//

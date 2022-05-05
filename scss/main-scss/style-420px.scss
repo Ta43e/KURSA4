@@ -139,27 +139,7 @@ body {
     }
     
 //===========================Инфо======================================================//
-.content {
-grid-area: main;
-display: grid;
-}
-.info {
-   display: grid;
-   grid-template: 1fr / 1fr minmax(auto, 1520px) 1fr;
-   background-color: rgba(0,0,0,0.75);
-   width: 100%;
-       &__text-h1 {
-          grid-column: 2;
-          font-size: 48px;
-          line-height: 63px;
-          color: $text-color;
-       }
-       &__text {
-          font-size: 24px;
-          line-height: 32px;
-          color: $text-color;
-       }
- }
+
 //----------------------------------Преимущества----------------------------------------------//
 .advantage {
    padding-top: 65px;

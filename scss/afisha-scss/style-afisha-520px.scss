@@ -155,19 +155,17 @@ body {
    justify-content: center;
 }
 
-.kartinka {
-   width: 142px;
-   height: 220px;
-   border-radius: 25px;
-}
+// .kartinka {
+//    width: 142px;
+//    height: 220px;
+//    border-radius: 25px;
+// }
 .item-info {
    text-align: center;
    grid-row: 2;
    grid-column: 2;
    font-size: 12px;
    color: $text-color;
-   background: #000000;
-   border-radius: 20px;
    line-height: 15px;
 }
 .item-buy {
@@ -176,8 +174,6 @@ body {
    grid-column: 3;
    font-size: 12px;
    color: $text-color;
-   background: #000000;
-   border-radius: 20px;
    line-height: 15px;
 }
    

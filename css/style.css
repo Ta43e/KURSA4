@@ -82,6 +82,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: iherit;
 }
 
+a:hover {
+  color: white;
+  -webkit-transition-duration: .25s;
+          transition-duration: .25s;
+}
+
 .line {
   background-color: #27272A;
   width: 100%;
@@ -191,16 +197,17 @@ body {
 }
 
 .padaem {
-  z-index: 10;
+  z-index: 5;
   display: none;
   position: absolute;
   background-color: #000000;
   left: -80px;
   width: 276px;
-  height: 280px;
+  height: 275px;
   text-align: center;
   -webkit-transition-duration: .25s;
           transition-duration: .25s;
+  margin-top: 5px;
 }
 
 .padaem__drop-bg {
@@ -497,6 +504,7 @@ body {
   -ms-grid-rows: 1fr 1fr 1fr;
   -ms-grid-columns: 1fr 3.8fr 3.8fr 1fr;
       grid-template: 1fr 1fr 1fr / 1fr 3.8fr 3.8fr 1fr;
+  grid-column-gap: 10px;
 }
 
 .items__text1 {
@@ -587,6 +595,11 @@ body {
   grid-column: 2;
   -ms-grid-row: 3;
   grid-row: 3;
+}
+
+.items .items__imgd {
+  width: 100%;
+  height: 100%;
 }
 
 .footer {
