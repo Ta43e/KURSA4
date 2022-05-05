@@ -342,6 +342,8 @@ body {
   -ms-grid-rows: 1fr 1fr;
   -ms-grid-columns: 1fr (2fr)[4] 1fr;
       grid-template: 1fr 1fr/1fr repeat(4, 2fr) 1fr;
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
 }
 
 .item__items1 {
@@ -359,6 +361,8 @@ body {
   grid-column: 2;
   -ms-grid-row: 1;
   grid-row: 1;
+  background: #1A1A1C;
+  border-radius: 20px;
 }
 
 .item__items2 {
@@ -376,6 +380,8 @@ body {
   grid-column: 3;
   -ms-grid-row: 1;
   grid-row: 1;
+  background: #1A1A1C;
+  border-radius: 20px;
 }
 
 .item__items3 {
@@ -393,6 +399,8 @@ body {
   grid-column: 4;
   -ms-grid-row: 1;
   grid-row: 1;
+  background: #1A1A1C;
+  border-radius: 20px;
 }
 
 .item__items4 {
@@ -410,6 +418,8 @@ body {
   grid-column: 5;
   -ms-grid-row: 1;
   grid-row: 1;
+  background: #1A1A1C;
+  border-radius: 20px;
 }
 
 .item__items5 {
@@ -427,6 +437,8 @@ body {
   grid-column: 2;
   -ms-grid-row: 2;
   grid-row: 2;
+  background: #1A1A1C;
+  border-radius: 20px;
 }
 
 .item__items6 {
@@ -444,6 +456,8 @@ body {
   grid-column: 3;
   -ms-grid-row: 2;
   grid-row: 2;
+  background: #1A1A1C;
+  border-radius: 20px;
 }
 
 .item__items7 {
@@ -461,6 +475,8 @@ body {
   grid-column: 4;
   -ms-grid-row: 2;
   grid-row: 2;
+  background: #1A1A1C;
+  border-radius: 20px;
 }
 
 .item__items8 {
@@ -478,6 +494,13 @@ body {
   grid-column: 5;
   -ms-grid-row: 2;
   grid-row: 2;
+  background: #1A1A1C;
+  border-radius: 20px;
+}
+
+.img {
+  fill: white;
+  padding-top: 3%;
 }
 
 .text {
