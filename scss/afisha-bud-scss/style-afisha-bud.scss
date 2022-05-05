@@ -204,6 +204,7 @@ body {
    justify-items: center;
    justify-content: center;
    grid-row-gap: 40px;
+   grid-column-gap: 10px;
 }
 .advantage1 {
    grid-row: 1;
@@ -266,8 +267,8 @@ body {
    grid-column: 2/4;
 }
 .kartinka {
-   width: 349px;
-   height: 538px;
+   width: 100%;
+   height: 100%;
    border-radius: 15px;
 }
 

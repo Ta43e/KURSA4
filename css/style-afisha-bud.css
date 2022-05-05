@@ -296,6 +296,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   grid-row-gap: 40px;
+  grid-column-gap: 10px;
 }
 
 .advantage1 {
@@ -398,8 +399,8 @@ body {
 }
 
 .kartinka {
-  width: 349px;
-  height: 538px;
+  width: 100%;
+  height: 100%;
   border-radius: 15px;
 }
 

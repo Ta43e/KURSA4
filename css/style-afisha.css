@@ -296,6 +296,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   grid-row-gap: 40px;
+  grid-column-gap: 10px;
 }
 
 .advantage1 {
