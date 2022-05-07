@@ -392,17 +392,17 @@ body {
   padding: 10px;
 }
 
-.item-img {
-  -ms-grid-row: 1;
-  grid-row: 1;
-  -ms-grid-column: 2;
-  grid-column: 2;
-}
-
 .kartinka {
   width: 100%;
   height: 100%;
   border-radius: 15px;
+}
+
+.kartinka:hover {
+  -webkit-transition-duration: .25s;
+          transition-duration: .25s;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .item-buy {
