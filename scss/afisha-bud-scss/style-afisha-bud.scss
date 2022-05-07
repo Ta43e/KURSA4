@@ -255,16 +255,18 @@ body {
 
 .item {
    display: grid;
-   grid-template: 1fr auto / 1fr 5fr 3fr 1fr;
+   grid-template: 1fr auto / 1fr 8fr 1fr;
    background: #1A1A1C;
    border-radius: 20px;
    justify-items: left;
    padding: 10px;
    grid-row-gap: 1% ;
+   justify-items: center;
+   justify-content: center;
 }
 .item-img {
    grid-row: 1;
-   grid-column: 2/4;
+   grid-column: 2;
 }
 .kartinka {
    width: 100%;
@@ -279,8 +281,6 @@ body {
    font-size: 24px;
    line-height: 40px;
    color: $text-color;
-   background: #000000;
-   border-radius: 20px;
 }
 //===========================Подвал======================================================//
 

@@ -152,7 +152,7 @@ body {
 
 .item {
    display: grid;
-   grid-template: 1fr auto / 1fr 5fr 3fr 1fr;
+   grid-template: 1fr auto / 1fr 8fr 1fr;
    background: #1A1A1C;
    border-radius: 20px;
    justify-items: center;
@@ -169,7 +169,6 @@ body {
    grid-column: 2;
    font-size: 20px;
    color: $text-color;
-   background: #000000;
    border-radius: 20px;
    line-height: 30px;
 }

@@ -381,8 +381,8 @@ body {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 1fr auto;
-  -ms-grid-columns: 1fr 3fr 5fr 1fr;
-      grid-template: 1fr auto / 1fr 3fr 5fr 1fr;
+  -ms-grid-columns: 1fr 8fr 1fr;
+      grid-template: 1fr auto / 1fr 8fr 1fr;
   background: #1A1A1C;
   border-radius: 20px;
   justify-items: center;
@@ -396,8 +396,7 @@ body {
   -ms-grid-row: 1;
   grid-row: 1;
   -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-column: 2/4;
+  grid-column: 2;
 }
 
 .kartinka {
@@ -406,24 +405,16 @@ body {
   border-radius: 15px;
 }
 
-.item-info {
+.item-buy {
   -ms-grid-row: 2;
   grid-row: 2;
   -ms-grid-column: 2;
   grid-column: 2;
   font-size: 24px;
   line-height: 40px;
-  color: #184FB9;
-}
-
-.item-buy {
-  -ms-grid-row: 2;
-  grid-row: 2;
-  -ms-grid-column: 3;
-  grid-column: 3;
-  font-size: 24px;
-  line-height: 40px;
-  color: #184FB9;
+  border-radius: 10px;
+  margin-top: 10px;
+  color: white;
 }
 
 .footer {
