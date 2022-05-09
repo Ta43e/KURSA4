@@ -1,0 +1,306 @@
+$text-color: #184FB9
+$fon: #27272A
+$fon_f: #3A3A3A
+$text_info: #9D9898
+$fon_header: #513CA8
+
+//----------------------------Обнуление------------------------------------------\\
+*
+  font-family: Roboto Mono
+  padding: 0
+  margin: 0
+  border: 0
+
+*, *::before, *:after
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+
+\:focus, :active
+  outline: none
+
+nav, footer, header, aside
+  display: block
+
+html, body
+  height: 100%
+  width: 100%
+  font-style: 100px
+  line-height: 1
+  font-style: 14px
+  -ms-text-size-adjust: 100%
+  -moz-text-size-adjust: 100%
+  -webkit-text-size-adjust: 100%
+
+input, button, textarea
+  font-style: inherit
+
+input::-ms-clear
+  display: none
+
+button
+  cursor: pointer
+
+button::-moz-focus-inner
+  padding: 0
+  border: 0
+
+a, a:visited
+  text-decoration: none
+
+a:hover
+  text-decoration: none
+
+ul li
+  list-style: none
+
+img
+  vertical-align: top
+
+h1, h2, h3, h4, h5, h6
+  font-size: inherit
+  font-weight: iherit
+
+a
+  text-decoration: none
+
+//=====================Оболочка=================================================================================================================================================\\
+
+.line
+  background-color: $fon
+  width: 100%
+  height: 1px
+  padding-top: 50px
+  padding-bottom: 70px
+
+  &__row
+    height: 1px
+    width: 85%
+    margin: 0 auto
+    background-color: #fff
+
+body
+  font-family: Roboto Mono
+
+.wrapper
+  display: grid
+  min-height: 100%
+  grid-template: minmax(auto, 50px) auto (minmax(auto, 255px) / 1fr)
+  grid-template-areas: "header" "main" "footer"
+  overflow: hidden
+
+//=================Шапка==================================================//
+
+.header
+  background: $fon
+  z-index: 10
+
+  &__menu
+    padding: 60px 0px
+    visibility: hidden
+    display: block
+    position: absolute
+    top: 0
+    left: 0%
+    align-items: center
+    background: rgba(0, 0, 0, 0.921)
+    width: 50%
+    height: 100%
+    transition-duration: .25s
+    left: -100%
+
+  &__navodka
+    display: block
+    position: none
+
+  &__list
+    display: block
+    transition-duration: .25s
+    padding: 15px
+
+.padaem
+  display: block
+  position: none
+  background-color: #00000000
+  left: 0px
+  width: auto
+  height: auto
+  text-align: left
+  margin-top: 60px
+
+  &__drop-bg
+    display: none
+
+  &__drop-up
+    display: none
+
+  &__drop
+    color: $text-color
+    font-size: 20px
+    text-decoration: none
+
+//------------------------------------------------//
+
+#menu__toggle
+  opacity: 0
+
+#menu__toggle:checked ~ .menu__btn > span
+  transform: rotate(45deg)
+
+#menu__toggle:checked ~ .menu__btn > span::before
+  top: 0
+  transform: rotate(0)
+
+#menu__toggle:checked ~ .menu__btn > span::after
+  top: 0
+  transform: rotate(90deg)
+
+#menu__toggle:checked ~ .header__menu
+  visibility: visible
+  left: 0
+
+.menu__btn
+  display: flex
+  align-items: center
+  position: fixed
+  top: 20px
+  left: 20px
+  width: 26px
+  height: 26px
+  cursor: pointer
+  z-index: 1
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after
+  display: block
+  position: absolute
+  width: 100%
+  height: 2px
+  background-color: #616161
+  transition-duration: .25s
+
+.menu__btn > span::before
+  content: ''
+  top: -8px
+
+.menu__btn > span::after
+  content: ''
+  top: 8px
+
+//===========================Афиша======================================================//
+.content
+  display: grid
+  grid-template: auto/ 1fr 8fr 1fr
+  background: $fon
+
+  .bg
+    grid-column: 2
+    display: grid
+    grid-template: auto auto / 1fr 8fr 1fr
+    grid-template-areas: "info" "buy"
+    background: #1A1A1C
+    border-radius: 10px
+
+.info
+  padding-top: 115px
+  grid-area: info
+  grid-column: 2
+  display: grid
+  grid-template: 1fr / auto 1fr
+  grid-gap: 8%
+
+  .poster
+    grid-column: 1
+
+    .foto
+      width: 100%
+
+      //430px;
+      height: auto
+      border-radius: 20%
+
+  .options
+    grid-column: 2
+
+    p.p1
+      font-size: 24px
+      display: block
+      padding-bottom: 3%
+      color: $text-color
+
+    p.p2
+      font-size: 18px
+      display: block
+      padding-bottom: 3%
+      color: $text-color
+
+    p
+      font-size: 16px
+      display: block
+      padding-bottom: 3%
+      color: $text-color
+
+//===========================Подвал======================================================//
+
+.footer
+  padding-top: 55px
+  grid-area: footer
+  display: grid
+  background-color: $fon-f
+  grid-template: 1fr 5fr / 1fr 5fr 5fr 5fr 1fr
+
+  &__logo
+    grid-column: span(5)
+    grid-row: 1
+
+  &__afischa
+    grid-column: 2
+    grid-row: 2
+
+  &__kinotiatri
+    grid-column: 3
+    grid-row: 2
+
+  &__kontakti
+    grid-column: 4
+    grid-row: 2
+
+.afischa
+  &__li
+    font-size: 16px
+    line-height: 22px
+    color: #FFFFFF
+
+  &__h1-a
+    font-size: 18px
+    line-height: 37px
+    color: #fff
+
+.kinotiatri
+  &__li
+    font-size: 16px
+    line-height: 22px
+    color: #FFFFFF
+
+  &__h1-k
+    font-size: 18px
+    line-height: 37px
+    color: #fff
+
+.kontakti
+  &__h1-kon
+    font-size: 18px
+    line-height: 37px
+    color: #fff
+
+a.nulik_w
+  color: #fff
+
+svg.kontakti__telega
+  width: 40px
+  height: 40px
+
+svg.kontakti__vk
+  width: 40px
+  height: 40px

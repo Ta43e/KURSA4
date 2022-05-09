@@ -1,0 +1,337 @@
+$text-color: #184FB9
+$fon: #27272A
+$fon_f: #3A3A3A
+$text_info: #9D9898
+$fon_header: #513CA8
+
+//----------------------------Обнуление------------------------------------------\\
+*
+  font-family: Roboto Mono
+  padding: 0
+  margin: 0
+  border: 0
+
+*, *::before, *:after
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+
+\:focus, :active
+  outline: none
+
+nav, footer, header, aside
+  display: block
+
+html, body
+  height: 100%
+  width: 100%
+  font-style: 100px
+  line-height: 1
+  font-style: 14px
+  -ms-text-size-adjust: 100%
+  -moz-text-size-adjust: 100%
+  -webkit-text-size-adjust: 100%
+
+input, button, textarea
+  font-style: inherit
+
+input::-ms-clear
+  display: none
+
+button
+  cursor: pointer
+
+button::-moz-focus-inner
+  padding: 0
+  border: 0
+
+a, a:visited
+  text-decoration: none
+
+a:hover
+  text-decoration: none
+
+ul li
+  list-style: none
+
+img
+  vertical-align: top
+
+h1, h2, h3, h4, h5, h6
+  font-size: inherit
+  font-weight: iherit
+
+a
+  text-decoration: none
+
+//=====================Оболочка=================================================================================================================================================\\
+
+.line
+  background-color: $fon
+  width: 100%
+  height: 1px
+  padding-top: 50px
+  padding-bottom: 70px
+
+  &__row
+    height: 1px
+    width: 85%
+    margin: 0 auto
+    background-color: #fff
+
+body
+  font-family: Roboto Mono
+
+.wrapper
+  display: grid
+  min-height: 100%
+  grid-template: minmax(auto, 150px) 1fr (minmax(auto, 255px) / 1fr)
+  grid-template-areas: "header" "main" "footer"
+  overflow: hidden
+
+//=================Шапка==================================================//
+.header
+  grid-area: header
+  background: linear-gradient(to bottom, #000 80%, $fon_header 20%)
+  display: grid
+  grid-template: 1fr / 1fr minmax(auto, 1520px) 1fr
+  align-items: center
+  justify-items: start
+
+  &__menu
+    display: grid
+    grid-column: 2
+    padding: 0px 15px
+    grid-row: 1
+    grid-template: (1fr / minmax(auto, 285px)) minmax(auto, 1235px)
+
+  &__logo
+    grid-column: 1
+    width: 140px
+    padding-left: 15px
+
+  &__list
+    grid-column: 2
+    display: grid
+    justify-items: center
+    grid-template: 1fr / 3fr 3fr 3fr 2fr
+
+  &__link
+    display: flex
+    color: $text-color
+    font-size: 28px
+
+  &__navodka
+    position: relative
+
+  &__navodka:hover .padaem
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+.logo_img
+  width: 120px
+  height: 40.285px
+
+.padaem
+  display: none
+  position: absolute
+  background-color: #000000
+  left: -50px
+  width: 200px
+  height: 240px
+  text-align: center
+
+  &__drop-bg
+    background-color: $fon_header
+    height: 30px
+    width: 100%
+
+  &__drop-up
+    height: 30px
+    width: 100%
+
+  &__drop
+    color: $text-color
+    font-size: 28px
+    text-decoration: none
+
+.nulik
+  color: $text-color
+
+//===========================Инфо======================================================//
+//===========================Content======================================================//
+.content
+  grid-area: main
+  display: grid
+  grid-template: auto auto auto / 1fr 8fr 1fr
+  grid-template-areas: "info" "text-info" "teasers"
+  background: $fon
+
+//-------------------------Инфо-------------------------//
+
+.info
+  padding-top: 115px
+  grid-area: info
+  grid-column: 2
+  display: grid
+  grid-template: 1fr / auto 1fr
+  grid-gap: 8%
+
+  .poster
+    grid-column: 1
+
+    .foto
+      width: 100%
+
+      //430px;
+      height: auto
+      border-radius: 20%
+
+  .options
+    grid-column: 2
+
+    p.p1
+      font-size: 100%
+      display: block
+      padding-bottom: 3%
+      color: $text-color
+
+    p.p2
+      font-size: 100%
+      display: block
+      padding-bottom: 3%
+      color: $text-color
+
+    p
+      font-size: 100%
+      display: block
+      padding-bottom: 3%
+      color: $text-color
+
+    a.buy
+      color: #fff
+      background: #000000
+      border-radius: 10px
+      line-height: 47px
+      font-size: 100%
+      padding: 5px
+
+//-------------------text-info------------------------//
+
+.text-info
+  margin-top: 3%
+  margin-bottom: 3%
+  padding-top: 5%
+  padding-bottom: 5%
+  grid-area: text-info
+  grid-column: 2
+  display: grid
+  grid-template: auto 1fr / 1fr 20fr 1fr
+  background: #1A1A1C
+
+  .about
+    grid-row: 1
+    grid-column: 2
+    color: $text-color
+    font-size: 44px
+    padding-bottom: 2%
+
+  .text-about
+    font-size: 26px
+    grid-row: 2
+    grid-column: 2
+    height: 50%
+    background: #1A1A1C
+    border-radius: 15px
+    color: $text-color
+
+//-----------------------teasers--------------------//
+.teasers
+  grid-area: teasers
+  grid-column: 2
+  display: grid
+  grid-template: auto 1fr / 1fr 10fr 10fr 1fr
+  grid-column-gap: 3%
+  padding-bottom: 5%
+  align-items: center
+
+  .tiasers-text
+    grid-row: 1
+    grid-column: 2/4
+
+  .foto1
+    grid-row: 2
+    grid-column: 2
+
+  .foto2
+    grid-row: 2
+    grid-column: 3
+
+  .img-foto
+    width: 90%
+    height: 90%
+
+//===========================Подвал======================================================//
+
+.footer
+  padding-top: 55px
+  grid-area: footer
+  display: grid
+  background-color: $fon-f
+  grid-template: 1fr 5fr / 1fr 5fr 5fr 5fr 1fr
+
+  &__logo
+    grid-column: span(5)
+    grid-row: 1
+
+  &__afischa
+    grid-column: 2
+    grid-row: 2
+
+  &__kinotiatri
+    grid-column: 3
+    grid-row: 2
+
+  &__kontakti
+    grid-column: 4
+    grid-row: 2
+
+.afischa
+  &__li
+    font-size: 16px
+    line-height: 22px
+    color: #FFFFFF
+
+  &__h1-a
+    font-size: 18px
+    line-height: 37px
+    color: #fff
+
+.kinotiatri
+  &__li
+    font-size: 16px
+    line-height: 22px
+    color: #FFFFFF
+
+  &__h1-k
+    font-size: 18px
+    line-height: 37px
+    color: #fff
+
+.kontakti
+  &__h1-kon
+    font-size: 18px
+    line-height: 37px
+    color: #fff
+
+a.nulik_w
+  color: #fff
+
+svg.kontakti__telega
+  width: 50px
+  height: 50px
+
+svg.kontakti__vk
+  width: 50px
+  height: 50px

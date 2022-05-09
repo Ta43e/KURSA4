@@ -1,0 +1,495 @@
+$text-color: #184FB9
+$fon: #27272A
+$fon_f: #3A3A3A
+$text_info: #9D9898
+$fon_header: #513CA8
+
+//-------------------------Скролл-бар------------------------------//
+
+body::-webkit-scrollbar
+  width: 10px
+  background-color: #f9f9fd
+
+body::-webkit-scrollbar-thumb
+  border-radius: 10px
+  background-color: black
+
+body::-webkit-scrollbar-track
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2)
+  background-color: $fon
+
+//----------------------------Обнуление------------------------------------------\\
+*
+  font-family: Roboto Mono
+  padding: 0
+  margin: 0
+  border: 0
+
+*, *::before, *:after
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+
+\:focus, :active
+  outline: none
+
+nav, footer, header, aside
+  display: block
+
+html, body
+  height: 100%
+  width: 100%
+  font-style: 100px
+  line-height: 1
+  font-style: 14px
+  -ms-text-size-adjust: 100%
+  -moz-text-size-adjust: 100%
+  -webkit-text-size-adjust: 100%
+
+input, button, textarea
+  font-style: inherit
+
+input::-ms-clear
+  display: none
+
+button
+  cursor: pointer
+
+button::-moz-focus-inner
+  padding: 0
+  border: 0
+
+a, a:visited, a:hover
+  text-decoration: none
+
+a.nulik, a.nulik:visited, a.nulik:hover
+  text-decoration: none
+
+ul li
+  list-style: none
+
+img
+  vertical-align: top
+
+h1, h2, h3, h4, h5, h6
+  font-size: inherit
+  font-weight: iherit
+
+//=====================Оболочка=================================================================================================================================================\\
+
+a:hover
+  color: rgb(255, 255, 255)
+  transition-duration: .25s
+
+//===============//
+.line
+  background-color: $fon
+  width: 100%
+  height: 1px
+  padding-top: 50px
+  padding-bottom: 70px
+
+  &__row
+    height: 1px
+    width: 85%
+    margin: 0 auto
+    background-color: #fff
+
+body
+  font-family: Roboto Mono
+
+.wrapper
+  display: grid
+  min-height: 100%
+  grid-template: minmax(auto, 150px) 1fr (minmax(auto, 255px) / 1fr)
+  grid-template-areas: "header" "main" "footer"
+  overflow: hidden
+
+//=================Шапка==================================================//
+
+.header
+  grid-area: header
+  background: linear-gradient(to bottom, #000 80%, $fon_header 20%)
+  display: grid
+  grid-template: 1fr / 1fr minmax(auto, 1520px) 1fr
+  align-items: center
+  justify-items: start
+
+  &__menu
+    display: grid
+    grid-column: 2
+    padding: 0px 15px
+    grid-row: 1
+    grid-template: (1fr / minmax(auto, 285px)) minmax(auto, 1235px)
+
+  &__logo
+    grid-column: 1
+    width: 140px
+    padding-left: 15px
+
+  &__list
+    grid-column: 2
+    display: grid
+    justify-items: center
+    grid-template: 1fr / 3fr 3fr 3fr 2fr
+
+  &__link
+    display: flex
+    color: $text-color
+    font-size: 32px
+
+  &__navodka
+    position: relative
+
+  &__navodka:hover .padaem
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+.logo_img
+  width: 120px
+  height: 40.285px
+
+.padaem
+  z-index: 5
+  display: none
+  position: absolute
+  background-color: #000000
+  left: -80px
+  width: 276px
+  height: 275px
+  text-align: center
+  transition-duration: .25s
+  margin-top: 5px
+
+  &__drop-bg
+    background-color: $fon_header
+    height: 38px
+    width: 100%
+
+  &__drop-up
+    height: 38px
+    width: 100%
+
+  &__drop
+    color: $text-color
+    font-size: 32px
+    text-decoration: none
+
+.nulik
+  color: $text-color
+
+//--------------------------------------------//
+.knopka
+  display: none
+
+#menu__toggle
+  opacity: 0
+
+#menu__toggle:checked ~ .menu__btn > span
+  transform: rotate(45deg)
+
+#menu__toggle:checked ~ .menu__btn > span::before
+  top: 0
+  transform: rotate(0)
+
+#menu__toggle:checked ~ .menu__btn > span::after
+  top: 0
+  transform: rotate(90deg)
+
+#menu__toggle:checked ~ .header__logo, .header__menu
+  visibility: visible
+  left: 0
+
+.menu__btn
+  display: none
+  align-items: center
+  position: fixed
+  top: 20px
+  left: 20px
+  width: 26px
+  height: 26px
+  cursor: pointer
+  z-index: 1
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after
+  display: none
+  position: absolute
+  width: 100%
+  height: 100%
+  background-color: #616161
+  transition-duration: .25s
+
+.menu__btn > span::before
+  content: ''
+  top: -8px
+
+.menu__btn > span::after
+  content: ''
+  top: 8px
+
+//--------------------------test-end---------------//
+//===========================Инфо======================================================//
+.content
+  grid-area: main
+  display: grid
+
+.info
+  display: grid
+  grid-template: 1fr / 1fr minmax(auto, 1520px) 1fr
+  background: url(../img/fon.jpg) center no-repeat
+  width: 100%
+  height: 86vh
+
+  &__text-h1
+    grid-column: 2
+    font-size: 48px
+    line-height: 63px
+    color: $text-color
+
+  &__text
+    font-size: 24px
+    line-height: 32px
+    color: $text-color
+
+//----------------------------------Преимущества----------------------------------------------//
+.advantage
+  padding-top: 65px
+  padding-bottom: 30px
+  background-color: $fon
+
+  &__item
+    display: grid
+    grid-template: 1fr 1fr / 1fr repeat(4, 2fr) 1fr
+    grid-row-gap: 20px
+    grid-column-gap: 20px
+
+.item
+  &__items1
+    align-items: center
+    display: flex
+    flex-direction: column
+    grid-column: 2
+    grid-row: 1
+    background: #1A1A1C
+    border-radius: 20px
+
+  &__items2
+    align-items: center
+    display: flex
+    flex-direction: column
+    grid-column: 3
+    grid-row: 1
+    background: #1A1A1C
+    border-radius: 20px
+
+  &__items3
+    align-items: center
+    display: flex
+    flex-direction: column
+    grid-column: 4
+    grid-row: 1
+    background: #1A1A1C
+    border-radius: 20px
+
+  &__items4
+    align-items: center
+    display: flex
+    flex-direction: column
+    grid-column: 5
+    grid-row: 1
+    background: #1A1A1C
+    border-radius: 20px
+
+  &__items5
+    align-items: center
+    display: flex
+    flex-direction: column
+    grid-column: 2
+    grid-row: 2
+    background: #1A1A1C
+    border-radius: 20px
+
+  &__items6
+    align-items: center
+    display: flex
+    flex-direction: column
+    grid-column: 3
+    grid-row: 2
+    background: #1A1A1C
+    border-radius: 20px
+
+  &__items7
+    align-items: center
+    display: flex
+    flex-direction: column
+    grid-column: 4
+    grid-row: 2
+    background: #1A1A1C
+    border-radius: 20px
+
+  &__items8
+    align-items: center
+    display: flex
+    flex-direction: column
+    grid-column: 5
+    grid-row: 2
+    background: #1A1A1C
+    border-radius: 20px
+
+.img
+  fill: white
+  padding-top: 3%
+
+.text
+  text-align: center
+  font-size: 20px
+  line-height: 32px
+  color: $text_info
+
+.text_h1
+  color: rgb(160, 160, 160)
+  text-align: center
+  font-size: 40px
+  line-height: 63px
+
+//-----------------------------Особенности--------------------------------------------------//
+
+.detail
+  background-color: $fon
+
+  &__row
+    display: grid
+    grid-template: 1fr 1fr 1fr / 1fr 3.8fr 3.8fr 1fr
+    grid-column-gap: 10px
+
+.items
+  &__text1
+    display: flex
+    align-items: center
+    grid-column: 3
+    grid-row: 1
+    font-size: 24px
+    line-height: 32px
+    color: $text_info
+
+  &__img1
+    display: flex
+    margin: 0 auto
+    align-self: center
+    grid-column: 2
+    grid-row: 1
+
+  &__text2
+    border-top: 1px solid #fff
+    display: flex
+    align-items: center
+    grid-column: 2
+    grid-row: 2
+    font-size: 24px
+    line-height: 32px
+    color: $text_info
+
+  &__img2
+    align-self: center
+    margin: 0 auto
+    display: flex
+    grid-column: 3
+    grid-row: 2
+
+  &__text3
+    display: flex
+    align-items: center
+    grid-column: 3
+    grid-row: 3
+    font-size: 24px
+    line-height: 32px
+    color: $text_info
+    border-top: 1px solid #fff
+
+  &__img3
+    align-items: center
+    display: flex
+    margin: 0 auto
+    grid-column: 2
+    grid-row: 3
+
+  .items__imgd
+    width: 100%
+    height: 100%
+
+// .fotki {
+// }
+
+//===========================Подвал======================================================//
+
+.footer
+  padding-top: 55px
+  grid-area: footer
+  display: grid
+  background-color: $fon-f
+  grid-template: 1fr / 1fr 2fr 2fr 2fr 2fr 1fr
+
+  &__logo
+    grid-column: 2
+
+  &__afischa
+    grid-column: 3
+
+  &__kinotiatri
+    grid-column: 4
+
+  &__kontakti
+    grid-column: 5
+
+// .logo {
+
+//    &_img {
+//    }
+// }
+.afischa
+  &__li
+    font-size: 24px
+    line-height: 32px
+    color: #FFFFFF
+
+  &__h1-a
+    font-size: 36px
+    line-height: 47px
+    color: #fff
+
+.kinotiatri
+  &__li
+    font-size: 24px
+    line-height: 32px
+    color: #FFFFFF
+
+  &__h1-k
+    font-size: 36px
+    line-height: 47px
+    color: #fff
+
+.kontakti
+  &__h1-kon
+    font-size: 36px
+    line-height: 47px
+    color: #fff
+
+  &__vk
+    display: inline
+
+  &__telega
+    display: inline
+
+a.nulik_w
+  color: #fff
+
+svg.kontakti__telega
+  width: 60px
+  height: 60px
+
+svg.kontakti__vk
+  width: 60px
+  height: 60px

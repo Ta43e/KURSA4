@@ -5,20 +5,27 @@
   border: 0;
 }
 
-*, *::before, *:after {
+*,
+*::before,
+*:after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-:focus, :active {
+:focus,
+:active {
   outline: none;
 }
 
-nav, footer, header, aside {
+nav,
+footer,
+header,
+aside {
   display: block;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
   font-style: 100px;
@@ -29,7 +36,9 @@ html, body {
   -webkit-text-size-adjust: 100%;
 }
 
-input, button, textarea {
+input,
+button,
+textarea {
   font-style: inherit;
 }
 
@@ -46,7 +55,8 @@ button::-moz-focus-inner {
   border: 0;
 }
 
-a, a:visited {
+a,
+a:visited {
   text-decoration: none;
 }
 
@@ -62,7 +72,12 @@ img {
   vertical-align: top;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: inherit;
   font-weight: iherit;
 }
@@ -72,7 +87,7 @@ a {
 }
 
 .line {
-  background-color: #27272A;
+  background-color: #27272a;
   width: 100%;
   height: 1px;
   padding-top: 50px;
@@ -102,7 +117,7 @@ body {
 }
 
 .header {
-  background: #27272A;
+  background: #27272a;
 }
 
 .header__menu {
@@ -118,8 +133,8 @@ body {
   background: rgba(0, 0, 0, 0.921);
   width: 68%;
   height: 100%;
-  -webkit-transition-duration: .25s;
-          transition-duration: .25s;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
   left: -100%;
 }
 
@@ -129,8 +144,8 @@ body {
 
 .header__list {
   display: block;
-  -webkit-transition-duration: .25s;
-          transition-duration: .25s;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
   padding: 15px;
 }
 
@@ -184,17 +199,17 @@ body {
   width: 100%;
   height: 2px;
   background-color: #616161;
-  -webkit-transition-duration: .25s;
-          transition-duration: .25s;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
 }
 
 .menu__btn > span::before {
-  content: '';
+  content: "";
   top: -8px;
 }
 
 .menu__btn > span::after {
-  content: '';
+  content: "";
   top: 8px;
 }
 
@@ -205,13 +220,13 @@ body {
 }
 
 .footer {
-  padding-top: 15px;
+  padding-top: 55px;
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: footer;
   display: -ms-grid;
   display: grid;
-  background-color: #3A3A3A;
+  background-color: #3a3a3a;
   -ms-grid-rows: 1fr 5fr;
   -ms-grid-columns: 1fr 5fr 5fr 5fr 1fr;
       grid-template: 1fr 5fr / 1fr 5fr 5fr 5fr 1fr;
@@ -245,13 +260,13 @@ body {
 }
 
 .afischa__li {
-  font-size: 12px;
-  line-height: 16px;
-  color: #FFFFFF;
+  font-size: 10px;
+  line-height: 12px;
+  color: #ffffff;
 }
 
 .afischa__h1-a {
-  font-size: 15px;
+  font-size: 13px;
   line-height: 30px;
   color: #fff;
 }
@@ -261,20 +276,20 @@ body {
 }
 
 .kinotiatri__li {
-  font-size: 12px;
-  line-height: 16px;
-  color: #FFFFFF;
+  font-size: 10px;
+  line-height: 12px;
+  color: #ffffff;
 }
 
 .kinotiatri__h1-k {
-  font-size: 12px;
+  font-size: 10px;
   line-height: 25px;
   color: #fff;
 }
 
 .kontakti__h1-kon {
-  font-size: 15px;
-  line-height: 30px;
+  font-size: 12px;
+  line-height: 20px;
   color: #fff;
 }
 

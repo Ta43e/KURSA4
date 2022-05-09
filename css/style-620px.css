@@ -110,7 +110,7 @@ body {
   padding: 60px 0px;
   visibility: hidden;
   display: block;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0%;
   -webkit-box-align: center;
@@ -126,6 +126,7 @@ body {
 
 .header__navodka {
   display: block;
+  position: none;
 }
 
 .header__list {
@@ -137,24 +138,21 @@ body {
 
 .padaem {
   display: block;
-  position: absolute;
+  position: none;
   background-color: #00000000;
   left: 0px;
   width: auto;
   height: auto;
   text-align: left;
-  padding-top: 60px;
+  margin-top: 60px;
 }
 
 .padaem__drop-bg {
-  background-color: rgba(0, 0, 0, 0);
-  height: 0px;
-  width: 0px;
+  display: none;
 }
 
 .padaem__drop-up {
-  height: 0px;
-  width: 0px;
+  display: none;
 }
 
 .padaem__drop {
@@ -253,6 +251,7 @@ body {
   font-size: 48px;
   line-height: 63px;
   color: #184FB9;
+  stroke: 1px solid black;
 }
 
 .info__text {

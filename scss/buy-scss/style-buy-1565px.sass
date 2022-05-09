@@ -1,0 +1,97 @@
+$text-color: #184FB9
+$fon: #27272A
+$fon_f: #3A3A3A
+$text_info: #9D9898
+$fon_header: #513CA8
+
+//----------------------------Обнуление------------------------------------------\\
+*
+  font-family: Roboto Mono
+  padding: 0
+  margin: 0
+  border: 0
+
+*, *::before, *:after
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+
+\:focus, :active
+  outline: none
+
+nav, footer, header, aside
+  display: block
+
+html, body
+  height: 100%
+  width: 100%
+  font-style: 100px
+  line-height: 1
+  font-style: 14px
+  -ms-text-size-adjust: 100%
+  -moz-text-size-adjust: 100%
+  -webkit-text-size-adjust: 100%
+
+input, button, textarea
+  font-style: inherit
+
+input::-ms-clear
+  display: none
+
+button
+  cursor: pointer
+
+button::-moz-focus-inner
+  padding: 0
+  border: 0
+
+a, a:visited, a:hover
+  text-decoration: none
+
+a.nulik, a.nulik:visited, a.nulik:hover
+  text-decoration: none
+
+ul li
+  list-style: none
+
+img
+  vertical-align: top
+
+h1, h2, h3, h4, h5, h6
+  font-size: inherit
+  font-weight: iherit
+
+//=====================Оболочка=================================================================================================================================================\\
+
+.line
+  background-color: $fon
+  width: 100%
+  height: 1px
+  padding-top: 50px
+  padding-bottom: 70px
+
+  &__row
+    height: 1px
+    width: 85%
+    margin: 0 auto
+    background-color: #fff
+
+body
+  font-family: Roboto Mono
+
+.wrapper
+  display: grid
+  min-height: 100%
+  grid-template: minmax(auto, 150px) 1fr (minmax(auto, 255px) / 1fr)
+  grid-template-areas: "header" "main" "footer"
+  overflow: hidden
+
+//=================Шапка==================================================//
+
+//--------------------------test-end---------------//
+//===========================Афиша======================================================//
+.content
+  background: $fon
+  grid-area: main
+
+//===========================Подвал======================================================//

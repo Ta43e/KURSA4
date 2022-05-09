@@ -1,0 +1,149 @@
+$text-color: #184fb9
+$fon: #27272a
+$fon_f: #3a3a3a
+$text_info: #9d9898
+$fon_header: #513ca8
+
+//----------------------------Обнуление------------------------------------------\\
+
+//=====================Оболочка=================================================================================================================================================\\
+
+//=================Шапка==================================================//
+
+.header
+  background: $fon
+
+  &__menu
+    padding: 60px 0px
+    visibility: hidden
+    display: block
+    position: fixed
+    top: 0
+    left: 0%
+    align-items: center
+    background: rgba(0, 0, 0, 0.921)
+    width: 50%
+    height: 100%
+    transition-duration: 0.25s
+    left: -100%
+
+  &__navodka
+    display: block
+
+  &__list
+    display: block
+    transition-duration: 0.25s
+    padding: 15px
+
+//------------------------------------------------//
+
+#menu__toggle
+  opacity: 0
+
+#menu__toggle:checked ~ .menu__btn > span
+  transform: rotate(45deg)
+
+#menu__toggle:checked ~ .menu__btn > span::before
+  top: 0
+  transform: rotate(0)
+
+#menu__toggle:checked ~ .menu__btn > span::after
+  top: 0
+  transform: rotate(90deg)
+
+#menu__toggle:checked ~ .header__menu
+  visibility: visible
+  left: 0
+
+.menu__btn
+  display: flex
+  align-items: center
+  position: fixed
+  top: 20px
+  left: 20px
+  width: 26px
+  height: 26px
+  cursor: pointer
+  z-index: 1
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after
+  display: block
+  position: absolute
+  width: 100%
+  height: 2px
+  background-color: #616161
+  transition-duration: 0.25s
+
+.menu__btn > span::before
+  content: ""
+  top: -8px
+
+.menu__btn > span::after
+  content: ""
+  top: 8px
+
+//===========================Инфо======================================================//
+
+//===========================Подвал======================================================//
+
+.footer
+  padding-top: 55px
+  grid-area: footer
+  display: grid
+  background-color: $fon-f
+  grid-template: 1fr 5fr / 1fr 5fr 5fr 5fr 1fr
+
+  &__logo
+    grid-column: span(5)
+    grid-row: 1
+
+  &__afischa
+    grid-column: 2
+    grid-row: 2
+
+  &__kinotiatri
+    grid-column: 3
+    grid-row: 2
+
+  &__kontakti
+    grid-column: 4
+    grid-row: 2
+
+.afischa
+  &__li
+    font-size: 16px
+    line-height: 22px
+    color: #ffffff
+
+  &__h1-a
+    font-size: 18px
+    line-height: 37px
+    color: #fff
+
+.kinotiatri
+  &__li
+    font-size: 16px
+    line-height: 22px
+    color: #ffffff
+
+  &__h1-k
+    font-size: 18px
+    line-height: 37px
+    color: #fff
+
+.kontakti
+  &__h1-kon
+    font-size: 18px
+    line-height: 37px
+    color: #fff
+
+  &__vk
+    display: inline
+
+  &__telega
+    display: inline
+
+a.nulik_w
+  color: #fff

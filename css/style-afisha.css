@@ -1,3 +1,18 @@
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f9f9fd;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: black;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+  background-color: #27272A;
+}
+
 * {
   font-family: Roboto Mono;
   padding: 0;
@@ -399,8 +414,8 @@ body {
 }
 
 .kartinka:hover {
-  -webkit-transition-duration: .25s;
-          transition-duration: .25s;
+  -webkit-transition-duration: .55s;
+          transition-duration: .55s;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }

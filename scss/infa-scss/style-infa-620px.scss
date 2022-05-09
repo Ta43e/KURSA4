@@ -59,7 +59,7 @@ body {
          padding: 60px 0px;
          visibility: hidden;
          display: block;
-         position: fixed;
+         position: absolute;
          top: 0;
          left: 0%;
          align-items: center;
@@ -72,6 +72,7 @@ body {
    
       &__navodka {
          display: block;
+         position: none;
       }
       &__list {
          display: block;
@@ -81,23 +82,20 @@ body {
    }
    .padaem {
       display: block;
-      position: absolute;
+      position: none;
       background-color: #00000000;
       left: 0px;
       width:auto;
       height: auto;
       text-align: left;
-      padding-top: 60px;
+      margin-top: 60px;
       
       &__drop-bg {
-         background-color: rgba(0, 0, 0, 0);
-         height: 0px;
-         width: 0px;
+         display: none;
       }
    
       &__drop-up {
-         height: 0px;
-         width: 0px;
+         display: none;
       }
        &__drop {
          color: $text-color;

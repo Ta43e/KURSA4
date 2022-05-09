@@ -1,0 +1,266 @@
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  min-height: 100%;
+  -ms-grid-rows: 40px 1fr minmax(auto, 255px);
+  -ms-grid-columns: 1fr;
+      grid-template: 40px 1fr minmax(auto, 255px)/1fr;
+      grid-template-areas: "header" "main" "footer";
+  overflow: hidden;
+}
+
+.header {
+  background: #27272a;
+  z-index: 10;
+}
+
+.header__menu {
+  padding: 60px 0px;
+  visibility: hidden;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(0, 0, 0, 0.921);
+  width: 50%;
+  height: 100%;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+  left: -100%;
+}
+
+.header__navodka {
+  display: block;
+  position: none;
+}
+
+.header__list {
+  display: block;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+  padding: 15px;
+}
+
+.padaem {
+  display: block;
+  position: none;
+  background-color: #00000000;
+  left: 0px;
+  width: auto;
+  height: auto;
+  text-align: left;
+  margin-top: 60px;
+}
+
+.padaem__drop-bg {
+  display: none;
+}
+
+.padaem__drop-up {
+  display: none;
+}
+
+.padaem__drop {
+  color: #184fb9;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+#menu__toggle {
+  opacity: 0;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .header__menu {
+  visibility: visible;
+  left: 0;
+}
+
+.menu__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+}
+
+.menu__btn > span::before {
+  content: "";
+  top: -8px;
+}
+
+.menu__btn > span::after {
+  content: "";
+  top: 8px;
+}
+
+.content {
+  padding-top: 5%;
+  padding-bottom: 10%;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: main;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto;
+  -ms-grid-columns: 1fr 7fr 1fr;
+      grid-template: auto / 1fr 7fr 1fr;
+  background: #27272a;
+}
+
+.content .elemen1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-rows: auto auto;
+  -ms-grid-columns: 15px 1fr 15px;
+      grid-template: auto auto / 15px 1fr 15px;
+  grid-row-gap: 3%;
+}
+
+.content .text-inf {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+.content .img-element {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  padding-top: 55px;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footer;
+  display: -ms-grid;
+  display: grid;
+  background-color: #3a3a3a;
+  -ms-grid-rows: 1fr 5fr;
+  -ms-grid-columns: 1fr 5fr 5fr 5fr 1fr;
+      grid-template: 1fr 5fr / 1fr 5fr 5fr 5fr 1fr;
+}
+
+.footer__logo {
+  grid-column: span(5);
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.footer__afischa {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+.footer__kinotiatri {
+  -ms-grid-column: 3;
+  grid-column: 3;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+.footer__kontakti {
+  -ms-grid-column: 4;
+  grid-column: 4;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+.afischa__li {
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.afischa__h1-a {
+  font-size: 18px;
+  line-height: 37px;
+  color: #fff;
+}
+
+.kinotiatri__li {
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.kinotiatri__h1-k {
+  font-size: 18px;
+  line-height: 37px;
+  color: #fff;
+}
+
+.kontakti svg {
+  width: 50px;
+  height: 50px;
+}
+
+.kontakti__h1-kon {
+  font-size: 18px;
+  line-height: 37px;
+  color: #fff;
+}
+
+a.nulik_w {
+  color: #fff;
+}
+
+svg.kontakti__telega {
+  width: 40px;
+  height: 40px;
+}
+
+svg.kontakti__vk {
+  width: 40px;
+  height: 40px;
+}
